@@ -1,0 +1,24 @@
+[submodule "spw_pkg_timeout"]
+	path = spw_pkg_timeout
+	url = http://github.com/personal-army-of-4o/spw_pkg_timeout.git
+[submodule "spw_pkg_truncator"]
+	path = spw_pkg_truncator
+	url = http://github.com/personal-army-of-4o/spw_pkg_truncator.git
+[submodule "spw_pkg_buffer"]
+	path = spw_pkg_buffer
+	url = http://github.com/personal-army-of-4o/spw_pkg_buffer.git
+[submodule "spw_router_rx_fsm"]
+	path = spw_router_rx_fsm
+	url = http://github.com/personal-army-of-4o/spw_router_rx_fsm.git
+[submodule "spw_router_tx_fsm"]
+	path = spw_router_tx_fsm
+	url = http://github.com/personal-army-of-4o/spw_router_tx_fsm.git
+[submodule "spw_router_mux"]
+	path = spw_router_mux
+	url = http://github.com/personal-army-of-4o/spw_router_mux.git
+[submodule "spw_router_arbiter"]
+	path = spw_router_arbiter
+	url = http://github.com/personal-army-of-4o/spw_router_arbiter.git
+[submodule "JSON-for-VHDL"]
+	path = JSON-for-VHDL
+	url = http://github.com/personal-army-of-4o/JSON-for-VHDL.git

@@ -1,0 +1,7 @@
+./hdl/src/pkg/config.vhd
+./hdl/src/spw_router.vhd
+./hdl/src/spw_router_port.vhd
+./hdl/src/spw_router_interconnect.vhd
+./hdl/src/spw_router_rx_pipeline.vhd
+./JSON-for-VHDL/src/Encodings.pkg.vhdl
+./JSON-for-VHDL/src/JSON.pkg.vhdl

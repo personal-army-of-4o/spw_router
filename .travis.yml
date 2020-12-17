@@ -1,0 +1,37 @@
+env:
+  global:
+    - IMG=ghdl/synth
+    - DISTR=formal
+    - SCRIPT=visualize.bash
+    - WORKDIR=/mnt/data
+    - TOP=spw_router
+
+services:
+  - docker
+
+# Handle git submodules yourself
+#git:
+#    submodules: false
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+#    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+#    - git submodule update --init --recursive
+#    - git submodule status
+    - docker pull $IMG:$DISTR
+
+# Here are the list of run scripts of different DUTs/testcases
+script:
+    # Testing the installation of the ghdl
+  - docker run -t $IMG:$DISTR ghdl --version
+  
+    # Mount the repo to docker, and run the hello world example
+  - > 
+    docker run -t -v `pwd`:$WORKDIR $IMG:$DISTR
+    /bin/bash -c "chmod u+x $WORKDIR/$SCRIPT; cd $WORKDIR; $WORKDIR/$SCRIPT $TOP"
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash ./upload.bash $TOP
+  on:
+    branch: init_code
