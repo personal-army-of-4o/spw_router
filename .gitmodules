@@ -1,0 +1,12 @@
+[submodule "spw_pkg_timeout"]
+	path = spw_pkg_timeout
+	url = git@github.com:personal-army-of-4o/spw_pkg_timeout.git
+[submodule "spw_pkg_truncator"]
+	path = spw_pkg_truncator
+	url = git@github.com:personal-army-of-4o/spw_pkg_truncator.git
+[submodule "spw_pkg_buffer"]
+	path = spw_pkg_buffer
+	url = git@github.com:personal-army-of-4o/spw_pkg_buffer.git
+[submodule "spw_router_rx_fsm"]
+	path = spw_router_rx_fsm
+	url = git@github.com:personal-army-of-4o/spw_router_rx_fsm.git
